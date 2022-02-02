@@ -1,0 +1,58 @@
+#Navbar {
+  position: relative;
+  height: calc(42px + 1vw);
+  position: fixed;
+  flex-wrap: wrap;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: rgba(252, 252, 252, 0.91);
+  transition: width all 0.4s ease-in;
+  z-index: 99;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3vw;
+}
+
+#BrandWrap, #NavLinks{
+    display: flex;
+    align-items: center;
+}
+
+#BrandWrap p{
+    font-weight: bolder;
+    font-size: 20px;
+    font-family: 'Poppins';
+    margin-left: 10px;
+}
+
+#NavLinks p{
+    margin: 0px 25px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    color: #222;
+}
+
+#NavLinks p:first-child{
+    margin-left: 0;
+}
+
+#NavLinks p:last-child{
+    margin-right: 0;
+}
+
+#SideNavTrigger{
+  display: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 800px) {
+  #NavLinks{
+    display: none;
+  }
+  #SideNavTrigger{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
