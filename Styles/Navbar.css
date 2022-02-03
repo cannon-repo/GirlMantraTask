@@ -1,4 +1,4 @@
-#Navbar {
+.Navbar {
   position: relative;
   height: calc(42px + 1vw);
   position: fixed;
@@ -12,45 +12,46 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 3vw;
+  flex-wrap: nowrap;
 }
 
-#BrandWrap, #NavLinks{
+.BrandWrap, .NavLinks{
     display: flex;
     align-items: center;
 }
 
-#BrandWrap p{
+.BrandWrap p{
     font-weight: bolder;
     font-size: 20px;
     font-family: 'Poppins';
     margin-left: 10px;
 }
 
-#NavLinks p{
+.NavLinks p{
     margin: 0px 25px;
     font-family: 'Poppins';
     font-size: 15px;
     color: #222;
 }
 
-#NavLinks p:first-child{
+.NavLinks p:first-child{
     margin-left: 0;
 }
 
-#NavLinks p:last-child{
+.NavLinks p:last-child{
     margin-right: 0;
 }
 
-#SideNavTrigger{
+.SideNavTrigger{
   display: none;
   cursor: pointer;
 }
 
 @media screen and (max-width: 800px) {
-  #NavLinks{
+  .NavLinks{
     display: none;
   }
-  #SideNavTrigger{
+  .SideNavTrigger{
     display: flex;
     justify-content: center;
     align-items: center;
