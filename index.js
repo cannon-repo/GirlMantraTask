@@ -42,4 +42,13 @@ window.onload = () => {
             card[i].children[2].style.backgroundColor = "transparent";
         });
     }
+
+    const girl = document.getElementById("ParallaxGirl");
+    let scroll = window.pageYOffset;
+    document.addEventListener('scroll', () => {
+        console.log('Scrolled');
+        let offset = window.pageYOffset;
+        scroll = offset;
+        girl.style.bottom = ((4*(window.innerWidth/100)) + scroll/10) + "px";
+    })
 }
