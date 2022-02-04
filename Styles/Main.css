@@ -331,4 +331,7 @@
     display: grid;
     grid-template-columns: 30% 30% 30%;
   }
+  .CardWrap{
+    margin: 0 auto;
+  }
 }
